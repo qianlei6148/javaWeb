@@ -1,24 +1,65 @@
 package io.github.qianlei.chapter2.service;
 
 
+import io.github.qianlei.chapter2.helper.DatabaseHelper;
 import io.github.qianlei.chapter2.model.Customer;
+import io.github.qianlei.chapter2.util.JdbcUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
+
 
 /**
  * 提供客户数据服务
  */
 public class CustomerService {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(CustomerService.class);
+
     /**
      * 获取客户列表.
-     * @param keyword
      * @return
      */
-    public List<Customer> getCustomerList(String keyword) {
-        //TODO
-        return null;
+    public List<Customer> getCustomerList() {
+        String sql = "SELECT * FROM customer";
+        return DatabaseHelper.queryEntityList(Customer.class, sql);
     }
+//        Connection conn = null;
+//        Connection conn = DatabaseHelper.getConnection();
+//        List<Customer> customerList = new ArrayList<Customer>();
+//        try {
+
+//            String sql = "SELECT * FROM customer";
+            //使用dbutil
+//            customerList = DatabaseHelper.queryEntityList(Customer.class, sql);
+            //不使用dbutil
+//            conn = DatabaseHelper.getConnection();
+//            PreparedStatement stmt = conn.prepareStatement(sql);
+//            ResultSet rs = stmt.executeQuery();
+//            while (rs.next()) {
+//                Customer customer = new Customer();
+//                customer.setId(rs.getLong("id"));
+//                customer.setName(rs.getString("name"));
+//                customer.setContact(rs.getString("contact"));
+//                customer.setTelephone(rs.getString("telephone"));
+//                customer.setEmail(rs.getString("email"));
+//                customer.setRemark(rs.getString("remark"));
+//                customerList.add(customer);
+//            }
+//        }
+//        catch (SQLException e) {
+//            LOGGER.error("execute sql failure", e);
+//        }
+//        finally {
+//            DatabaseHelper.closeConnection();
+//        }
+//        return customerList;
+//    }
 
     /**
      * 获取客户.

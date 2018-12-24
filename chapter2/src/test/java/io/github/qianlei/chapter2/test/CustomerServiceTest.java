@@ -56,7 +56,7 @@ public class CustomerServiceTest {
 
     @Test
     public void deleteCustomerTest() throws Exception {
-        long id = 1;
+        long id = 3;
         boolean result = customerService.deleteCustomer(id);
         Assert.assertTrue(result);
     }

@@ -22,4 +22,21 @@ public final class BeanHelper {
             BEAN_MAP.put(beanClass, obj);
         }
     }
+
+    /**
+     * 获取Bean映射
+     */
+    public static Map<Class<?>, Object> getBeanMap() {
+        return BEAN_MAP;
+    }
+
+    /**
+     * 获取Bean的实例
+     */
+    public static <T> T getBean(Class<T> cls) {
+        if (!BEAN_MAP.containsKey(cls)) {
+            throw new RuntimeException("can not get bean by class: " + cls);
+        }
+        return (T) BEAN_MAP.get(cls);
+    }
 }

@@ -1,8 +1,8 @@
-package io.github.qianlei.helper;
+package io.github.qianlei.framework.helper;
 
-import io.github.qianlei.annotation.Controller;
-import io.github.qianlei.annotation.Service;
-import io.github.qianlei.util.ClassUtil;
+import io.github.qianlei.framework.annotation.Controller;
+import io.github.qianlei.framework.annotation.Service;
+import io.github.qianlei.framework.util.ClassUtil;
 
 import java.util.HashSet;
 import java.util.Set;

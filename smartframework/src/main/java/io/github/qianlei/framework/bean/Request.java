@@ -1,4 +1,4 @@
-package io.github.qianlei.bean;
+package io.github.qianlei.framework.bean;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

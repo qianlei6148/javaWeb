@@ -1,9 +1,9 @@
-package io.github.qianlei.helper;
+package io.github.qianlei.framework.helper;
 
-import io.github.qianlei.annotation.Inject;
-import io.github.qianlei.util.ArrayUtil;
-import io.github.qianlei.util.CollectionUtil;
-import io.github.qianlei.util.ReflectionUtil;
+import io.github.qianlei.framework.annotation.Inject;
+import io.github.qianlei.framework.util.ArrayUtil;
+import io.github.qianlei.framework.util.CollectionUtil;
+import io.github.qianlei.framework.util.ReflectionUtil;
 
 import java.lang.reflect.Field;
 import java.util.Map;

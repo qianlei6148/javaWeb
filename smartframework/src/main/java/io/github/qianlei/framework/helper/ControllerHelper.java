@@ -1,10 +1,10 @@
-package io.github.qianlei.helper;
+package io.github.qianlei.framework.helper;
 
-import io.github.qianlei.annotation.Action;
-import io.github.qianlei.bean.Handler;
-import io.github.qianlei.bean.Request;
-import io.github.qianlei.util.ArrayUtil;
-import io.github.qianlei.util.CollectionUtil;
+import io.github.qianlei.framework.annotation.Action;
+import io.github.qianlei.framework.bean.Handler;
+import io.github.qianlei.framework.bean.Request;
+import io.github.qianlei.framework.util.ArrayUtil;
+import io.github.qianlei.framework.util.CollectionUtil;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;

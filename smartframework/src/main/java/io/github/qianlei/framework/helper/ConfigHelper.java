@@ -1,7 +1,7 @@
-package io.github.qianlei.helper;
+package io.github.qianlei.framework.helper;
 
-import io.github.qianlei.ConfigConstant;
-import io.github.qianlei.util.PropsUtil;
+import io.github.qianlei.framework.ConfigConstant;
+import io.github.qianlei.framework.util.PropsUtil;
 
 import java.util.Properties;
 

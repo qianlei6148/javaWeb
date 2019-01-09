@@ -1,4 +1,4 @@
-package io.github.qianlei.util;
+package io.github.qianlei.framework.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

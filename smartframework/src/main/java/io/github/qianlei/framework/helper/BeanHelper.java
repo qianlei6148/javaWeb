@@ -1,6 +1,6 @@
-package io.github.qianlei.helper;
+package io.github.qianlei.framework.helper;
 
-import io.github.qianlei.util.ReflectionUtil;
+import io.github.qianlei.framework.util.ReflectionUtil;
 
 import java.util.HashMap;
 import java.util.Map;

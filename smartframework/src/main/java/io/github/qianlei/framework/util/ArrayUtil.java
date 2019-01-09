@@ -1,4 +1,4 @@
-package io.github.qianlei.util;
+package io.github.qianlei.framework.util;
 
 import org.apache.commons.lang3.ArrayUtils;
 

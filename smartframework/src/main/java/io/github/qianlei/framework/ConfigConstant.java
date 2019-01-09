@@ -1,4 +1,4 @@
-package io.github.qianlei;
+package io.github.qianlei.framework;
 
 /**
  * 提供相关配置项常量.

@@ -1,4 +1,4 @@
-package io.github.qianlei.util;
+package io.github.qianlei.framework.util;
 
 /**
  * 转型操作工具类

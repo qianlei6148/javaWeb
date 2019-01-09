@@ -1,4 +1,4 @@
-package io.github.qianlei.bean;
+package io.github.qianlei.framework.bean;
 
 import java.lang.reflect.Method;
 

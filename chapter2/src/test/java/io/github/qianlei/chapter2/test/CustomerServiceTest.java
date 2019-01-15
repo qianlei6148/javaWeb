@@ -40,6 +40,7 @@ public class CustomerServiceTest {
         Assert.assertNotNull(customer);
     }
 
+    @SuppressWarnings("Duplicates")
     @Test
     public void createCustomerTest() throws Exception {
         Map<String, Object> fieldMap = new HashMap<String, Object>();
@@ -50,6 +51,7 @@ public class CustomerServiceTest {
         Assert.assertTrue(result);
     }
 
+    @SuppressWarnings("Duplicates")
     @Test
     public void updateCustomerTest() throws Exception {
         long id = 1;
